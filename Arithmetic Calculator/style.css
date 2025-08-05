@@ -1,0 +1,80 @@
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+    height:100%;
+    width:100%;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(/Poppins-Light.ttf);
+}
+
+body {
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.calculator {
+  background: #222;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.display {
+  width: 100%;
+  height: 60px;
+  background: #000;
+  color:#fff;
+  font-family: myFont;
+  font-size: 24px;
+  padding: 10px;
+  text-align: right;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  overflow-x: auto;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  grid-gap: 10px;
+}
+
+button {
+  height: 60px;
+  font-family: myFont;
+  font-size: 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.number {
+  background: #444;
+  color: white;
+}
+
+.operator {
+  background: #f36f0a;
+  color: white;
+}
+
+.clear {
+  background: #f02812;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.85;
+}
